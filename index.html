@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $usuario['nome']; ?></title>
+</head>
+
+<!--Cabeçalho -->
+
+          <ul id="menu-h">
+
+
+          <li><a href="index.php">Home</a></li>
+
+          <li><a href="analises.php">Análises</a></li>
+              
+              <li><a href="perfil.php">Dados cadastrais</a></li>
+              
+              <li><a href="logout.php">Sair</a></li>
+ 
+
+          </ul>
+          
+
+          <div class="logo" ><img src="logo1.png" width="200px"> </div>
+
+<header>
+
+ 
+</body>
+</html>
+
+
+
+<style>
+
+/* Cabeçalho */
+
+
+.logo{
+
+    position: relative;
+    top:-64px;
+}
+
+#menu-h{
+   
+    border-bottom: 1px solid #ddd;
+    position:center;
+    font-family: 'Roboto';
+
+    
+
+    
+}
+
+#menu-h li {
+
+     
+    display:inline-block;
+    padding: 10px;
+    max-width:800px;
+    text-decoration:none;
+
+    
+}
+
+#menu-h li a { /* houver no menu*/
+
+display:inline;
+color: black;
+padding:15px;
+text-decoration: none  ;
+transition: all .1s;
+font-family: 'Roboto';
+
+
+}
+.nome-cab{/* Nome do cliente cabeçalho*/ 
+
+
+left:950px;
+color: yellow;
+
+}
+
+
+
+
+/* TUDO QUE E HOVER*/
+
+#menu-h li a:hover { /* houver no menu*/
+
+background-color: black;
+color: white;
+
+
+}
+
+
+td a:hover { /* houver da lista de arqvuivos*/
+    background-color:  black;
+    transition: all .1s;
+    color: white;
+    
+
+}
+
+th a:hover { /* houver da lista de arqvuivos*/
+    background-color:  black;
+    color: white;
+
+}
+
+
+table{
+  width:90%;
+  table-layout: fixed;
+  position: relative;
+  left: 90px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  border-radius: 7px;
+  color: black;
+
+}
+  
+  
+
+
+.table-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 5px;
+  color: black;
+
+}
+th, td  a{  /* td e th dos arqvus*/
+  padding: 20px 15px;  
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto';
+
+  
+
+}
+td,a{ /* td e th dos arqvus*/
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  font-family: 'Roboto';
+
+  
+
+}
+
+
+/* Editando o form para enviar o arquivo */
+
+h2{ /* h2 da escrita do lado do form arq */
+
+
+font-size: 15px;
+position: relative;
+left: -440px;
+top: 150px;
+font-family: 'Roboto';
+
+
+}
+
+input[type=file], input[type=text], input[type=button] {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-family: 'Roboto';
+
+
+}
+
+.form-arq {
+	padding: 10px 50px ;
+	border-radius: 5px;
+    background: #fff;
+    position: relative;
+    left: 450px;
+	width: 350px;
+	height: 350px  350px;
+    box-shadow: -5px -10px 30px , 6px 9px 15px black;
+-webkit-box-shadow: -5px -10px 30px white, 6px 9px 15px black;
+-moz-box-shadow: -5px -10px 30px white, 6px 9px 15px black;
+
+
+}
+
+
+.form-arq button {/* Editano o botão de enviar o arquivo */
+
+	background-color: #121212;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+    font-family: 'Roboto';
+	padding: 10px;
+	margin: 20px 0px;
+    position: center;
+
+    cursor: pointer;
+}
+
+
+.form-arq input { /* Editando o input, tanto de arquivo tanto do nome */
+	margin: 10px 0px;
+	border: none;
+	padding: 5px;
+    background-color:   #DCDCDC	;
+	border-radius: 5px;
+	width: 95%;
+	font-size: 18px;
+    text-decoration: none;
+    font-family: 'Roboto';
+
+    
+
+
+
+}
+
+.nome_arq{ /* Editando o input type text, do nome do relatório */
+
+
+color: black;
+font-family: 'Roboto';
+
+}
+.sel_arq{/* Editando a escrita acima do input para selecionar o arquivo */
+
+color: black;
+font-family: 'Roboto';
+
+
+
+}
+.nome_rel { /* Editando a escrita acima do input para colocar o nome do arquivo */
+
+
+color: black;
+font-family: 'Roboto';
+
+}
+
+
+
+h1{/* Editando a lista de arquivos */
+
+color: black;
+font-size: 12px;
+font-family: MuseoSans;
+text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: 'Roboto';
+    text-decoration:none;
+
+
+}
+
+
+.logo{
+
+    position: relative;
+    top: -70px;
+    float:     right;
+}
+
+
+    </style>
+
